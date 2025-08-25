@@ -103,16 +103,6 @@ server-project1/
 - Professional styling
 - Cross-browser compatibility
 
-## Learning Outcomes
-
-This project showcases understanding of:
-
-- **HTTP Protocol** - Request/response handling, status codes, headers
-- **API Development** - RESTful endpoints, data processing, error handling
-- **Server Architecture** - Request routing, file serving, content delivery
-- **External Integration** - Third-party API consumption and data processing
-- **Full-Stack Development** - Backend logic + frontend communication
-
 ## Portfolio Value
 
 This project demonstrates that I can:
@@ -126,21 +116,7 @@ This project demonstrates that I can:
 ## Development
 
 ### **Adding New Endpoints**
-```python
-if self.path == "/api/new-endpoint":
-    # Your custom logic here
-    self.send_response(200)
-    self.send_header("Content-type", "application/json")
-    self.end_headers()
-    self.wfile.write(json.dumps({"message": "New endpoint"}).encode())
-    return
-```
 
-### **Serving New File Types**
-```python
-elif filepath.endswith(".pdf"):
-    content_type = "application/pdf"
-```
 
 ##Resources
 
