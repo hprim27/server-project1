@@ -28,7 +28,7 @@ A Python HTTP server built from scratch to showcase backend programming skills a
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/server-project1.git
+   git clone https://github.com/hprim27/server-project1.git
    cd server-project1
    ```
 
