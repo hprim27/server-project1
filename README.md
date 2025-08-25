@@ -1,8 +1,8 @@
-# 🚀 Custom HTTP Server - Portfolio Project
+#Custom HTTP Server - Portfolio Project
 
 A Python HTTP server built from scratch to showcase backend programming skills and full-stack development understanding.
 
-## ✨ What This Project Demonstrates
+#
 
 - **Custom HTTP Server Implementation** - Built using Python's built-in libraries
 - **Backend API Development** - Custom endpoints with external API integration
@@ -10,7 +10,7 @@ A Python HTTP server built from scratch to showcase backend programming skills a
 - **Real-World API Integration** - Wikipedia API for dynamic content
 - **Professional Code Quality** - Clean architecture and error handling
 
-## 🛠️ Technologies Used
+##Technologies Used
 
 - **Python 3.x** - Core server language
 - **http.server** - Built-in HTTP server framework
@@ -18,7 +18,7 @@ A Python HTTP server built from scratch to showcase backend programming skills a
 - **HTML/CSS/JavaScript** - Frontend interface
 - **Git** - Version control
 
-## 🚀 Quick Start
+##Quick Start
 
 ### Prerequisites
 - Python 3.6 or higher
@@ -47,7 +47,7 @@ A Python HTTP server built from scratch to showcase backend programming skills a
    - Artist of the Day: http://localhost:8000/artist-of-day.html
    - About page: http://localhost:8000/about.html
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### `/api/artists`
 - **Method**: GET
@@ -63,7 +63,7 @@ A Python HTTP server built from scratch to showcase backend programming skills a
 - **Purpose**: Returns basic project information
 - **Response**: JSON with project details
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 server-project1/
@@ -80,7 +80,7 @@ server-project1/
 └── README.md              # This file
 ```
 
-## 🎯 Key Features
+## Key Features
 
 ### **HTTP Server Capabilities**
 - Static file serving (HTML, CSS, JS, images)
@@ -103,7 +103,7 @@ server-project1/
 - Professional styling
 - Cross-browser compatibility
 
-## 🧠 Learning Outcomes
+## Learning Outcomes
 
 This project showcases understanding of:
 
@@ -113,7 +113,7 @@ This project showcases understanding of:
 - **External Integration** - Third-party API consumption and data processing
 - **Full-Stack Development** - Backend logic + frontend communication
 
-## 💼 Portfolio Value
+## Portfolio Value
 
 This project demonstrates that I can:
 
@@ -123,7 +123,7 @@ This project demonstrates that I can:
 - **Think architecturally** - Proper separation of concerns
 - **Deliver working solutions** - Functional, production-ready code
 
-## 🔧 Development
+## Development
 
 ### **Adding New Endpoints**
 ```python
@@ -142,13 +142,13 @@ elif filepath.endswith(".pdf"):
     content_type = "application/pdf"
 ```
 
-## 📚 Resources
+##Resources
 
 - [Python http.server Documentation](https://docs.python.org/3/library/http.server.html)
 - [HTTP Protocol](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 - [Wikipedia API Documentation](https://api.wikimedia.org/wiki/Main_Page)
 
-## 🤝 Contributing
+##Contributing
 
 Feel free to contribute by:
 - Adding new API endpoints
@@ -157,11 +157,9 @@ Feel free to contribute by:
 - Enhancing the frontend design
 - Adding tests and documentation
 
-## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
 
-## 👨‍💻 Author
+## Author
 
 **Harrythewzrd** - Demonstrating Python backend development skills
 
