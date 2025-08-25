@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artists of the Day</title>
+    <link rel="stylesheet" href="artist-of-day.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 Artists of the Day</h1>
+        <p class="page-description">Discover musicians born on today's date!</p>
+        
+        <div class="search-section">
+            <button id="find-musicians-btn" class="search-btn">
+                🔍 Find Today's Musicians
+            </button>
+        </div>
+        
+        <div id="artist-display">
+            <p class="placeholder-text">Click the button above to discover musicians born today!</p>
+        </div>
+        
+        <div class="home-button-container">
+            <a href="index.html" class="home-btn">🏠 Back to Portfolio</a>
+        </div>
+    </div>
+    
+    <script>
+        const button = document.getElementById("find-musicians-btn");
+        const display = document.getElementById("artist-display");
+
+        button.addEventListener("click", () => {
+            display.innerHTML = "Loading...";
+
+            fetch("/api/artists")
+                .then(response => response.json())
+                .then(data => {
+                    if (data.length === 0) {
+                        display.innerHTML = "No artists found for today.";
+                        return;
+                    }
+
+                    const html = data.map(item => {
+                        const name = item.text || "Unknown Artist";
+                        const year = item.year || "Unknown Year";
+                        const wikiLink = item.wiki_link || "#";
+                        return `
+                            <div class="artist-card">
+                                <h3>${name}</h3>
+                                <p><strong>Born:</strong> ${year}</p>
+                                <p><a href="${wikiLink}" target="_blank" class="wiki-link">📖 Read on Wikipedia</a></p>
+                            </div>
+                        `;
+                    }).join("");
+
+                    display.innerHTML = html;
+                })
+                .catch(error => {
+                    display.innerHTML = `<p>Error: ${error.message}</p>`;
+                });
+        });
+    </script>
+</body>
+</html>

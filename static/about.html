@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Harrythewzrd's HTTP Server</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            margin-top: 40px;
+            border-bottom: 1px solid #ecf0f1;
+            padding-bottom: 8px;
+        }
+        
+        code {
+            background: #f8f9fa;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Monaco', 'Menlo', monospace;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .back-link {
+            margin-top: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About This HTTP Server Project</h1>
+        <p>Showcasing Backend Programming Skills</p>
+
+        <h2>Project Goals</h2>
+        <p>I wanted to create my own server for my portfolio to showcase backend programming skills. Instead of having the frontend make API calls directly to Wikipedia, I built a custom backend that handles the API integration.</p>
+        
+        <h3>What Makes This Special</h3>
+        <p>This isn't just a simple file server - it's a full-stack application that demonstrates:</p>
+        <ul>
+            <li>Custom HTTP server implementation</li>
+            <li>Backend API development</li>
+            <li>External API integration</li>
+            <li>Server-side data processing</li>
+            <li>Frontend-backend communication</li>
+        </ul>
+
+        <h2>Technical Implementation</h2>
+        
+        <h3>Backend Technologies</h3>
+        <ul>
+            <li>Python 3.x - Core server language</li>
+            <li>http.server - Built-in HTTP server framework</li>
+            <li>requests - External API calls</li>
+            <li>json - Data serialization</li>
+            <li>datetime - Date handling</li>
+        </ul>
+        
+        <h3>Server Features</h3>
+        <ul>
+            <li>Static File Serving - HTML, CSS, JavaScript, images</li>
+            <li>Custom API Endpoints - <code>/api/artists</code> for musician data</li>
+            <li>External API Integration - Wikipedia API for real-time data</li>
+            <li>Data Filtering - Server-side filtering for music artists only</li>
+            <li>Error Handling - Proper HTTP status codes and error responses</li>
+            <li>Content-Type Detection - Automatic MIME type handling</li>
+        </ul>
+
+        <h2>API Endpoint Details</h2>
+        
+        <h4>Endpoint: <code>/api/artists</code></h4>
+        <p><strong>Method:</strong> GET</p>
+        <p><strong>Purpose:</strong> Fetches musicians born on today's date</p>
+        <p><strong>Process:</strong></p>
+        <ol>
+            <li>Gets current date (month/day)</li>
+            <li>Calls Wikipedia API: <code>https://api.wikimedia.org/feed/v1/wikipedia/en/onthisday/births/{month}/{day}</code></li>
+            <li>Filters results for music-related keywords</li>
+            <li>Adds Wikipedia links for each artist</li>
+            <li>Returns filtered JSON data</li>
+        </ol>
+        
+        <h3>Music Artist Filtering</h3>
+        <p>The server intelligently filters for musicians using keywords like:</p>
+        <ul>
+            <li>musician, singer, rapper, band, composer</li>
+            <li>guitarist, drummer, bassist, pianist, violinist</li>
+            <li>producer, songwriter, vocalist, performer</li>
+        </ul>
+
+        <h2>What This Demonstrates</h2>
+        
+        <h3>Backend Skills</h3>
+        <ul>
+            <li>HTTP Protocol Understanding - Request/response handling, status codes, headers</li>
+            <li>API Development - Creating RESTful endpoints, data processing</li>
+            <li>External API Integration - Third-party service consumption</li>
+            <li>Data Filtering & Processing - Server-side logic implementation</li>
+            <li>Error Handling - Graceful failure management</li>
+        </ul>
+        
+        <h3>Full-Stack Understanding</h3>
+        <ul>
+            <li>Client-Server Architecture - How frontend and backend communicate</li>
+            <li>API Design - Structuring endpoints for frontend consumption</li>
+            <li>Data Flow - From external API → server → frontend</li>
+            <li>Content Delivery - Serving different file types with proper headers</li>
+        </ul>
+
+        <h2>Portfolio Value</h2>
+        <p>This project showcases that I can:</p>
+        <ul>
+            <li>Build from scratch - Not just use frameworks</li>
+            <li>Understand networking - HTTP, APIs, client-server communication</li>
+            <li>Integrate external services - Real-world API usage</li>
+            <li>Think architecturally - Proper separation of concerns</li>
+            <li>Handle real data - Dynamic content from external sources</li>
+        </ul>
+        
+        <p><strong>This is exactly the kind of project that impresses employers</strong> - it shows deep understanding of web fundamentals, not just framework usage.</p>
+
+        <div class="back-link">
+            <a href="index.html">← Back to Portfolio</a>
+        </div>
+</body>
+</html>
+
+
